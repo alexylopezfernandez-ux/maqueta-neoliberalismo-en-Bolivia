@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neoliberalismo en Bolivia (1985–2005)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+    * { box-sizing: border-box; transition: all 0.3s ease; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #e3f2fd, #f1f1f1);
+      color: #1a1a1a;
+    }
+    header {
+      background: linear-gradient(120deg, #003566, #0077b6, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.3em;
+      letter-spacing: 1px;
+    }
+    .timeline {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 25px;
+    }
+    .year-btn {
+      background: linear-gradient(135deg, #ffb703, #fb8500);
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      padding: 14px 25px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1.1em;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .year-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 18px rgba(251,133,0,0.5);
+    }
+    #contenido {
+      width: 90%;
+      max-width: 950px;
+      background: #fff;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h2 { text-align: center; color: #003566; font-size: 1.8em; }
+    h3 { color: #005f73; }
+    p { line-height: 1.7; margin: 10px 0; font-size: 1.05em; }
+    img, video {
+      display: block;
+      max-width: 95%;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    img:hover { transform: scale(1.05) rotate(1deg); }
+    footer {
+      background: #003566;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>El Neoliberalismo en Bolivia (1985–2005)</h1>
+    <p>Explora los hechos históricos, causas, consecuencias y movimientos sociales.</p>
+  </header>
+
+  <div class="timeline">
+    <button class="year-btn" onclick="mostrar('1985')">1985</button>
+    <button class="year-btn" onclick="mostrar('1990')">1990</button>
+    <button class="year-btn" onclick="mostrar('2000')">2000</button>
+    <button class="year-btn" onclick="mostrar('2003')">2003</button>
+  </div>
+
+  <div id="contenido">
+    <p style="text-align:center;">Selecciona una fecha para comenzar la línea del tiempo interactiva.</p>
+  </div>
+
+  <footer>
+    <p>Proyecto educativo interactivo — Maqueta del Neoliberalismo en Bolivia</p>
+  </footer>
+
+  <script>
+    function mostrar(anio) {
+      const contenido = {
+        "1985": `
+          <h2>1985 – Nace el modelo neoliberal: Decreto Supremo 21060</h2>
+          <h3>Contexto histórico</h3>
+          <p>En 1985, Bolivia atravesaba una de las crisis económicas más graves de su historia. La hiperinflación había alcanzado niveles alarmantes, superando el 24.000% anual, lo que significaba que los precios cambiaban varias veces al día. La década anterior había estado marcada por inestabilidad política, dictaduras militares y un Estado altamente endeudado, incapaz de mantener su aparato productivo. Las empresas estatales, especialmente las mineras agrupadas en la Corporación Minera de Bolivia (COMIBOL), estaban en una situación crítica y el país dependía de la ayuda externa para sobrevivir.
+Ante este escenario, el presidente Víctor Paz Estenssoro regresó al poder con el compromiso de estabilizar la economía. Inspirado en las políticas neoliberales impulsadas por el Fondo Monetario Internacional (FMI) y el Banco Mundial, promulgó el Decreto Supremo 21060, que marcó el inicio de una nueva era económica basada en la apertura al mercado, la reducción del rol del Estado y la búsqueda de estabilidad macroeconómica a cualquier costo.
+</p>
+          <h3>Principales medidas</h3>
+          <ul>
+            <li>Liberalización de precios y eliminación de subsidios.</li>
+            <li>Despido masivo de más de 25,000 mineros (“relocalización”).</li>
+            <li>Congelamiento de salarios y reducción del gasto público.</li>
+            <li>Fomento de la inversión privada y extranjera.</li>
+            <li>Devaluación del peso boliviano y creación de una nueva moneda: el boliviano (Bs), con un tipo de cambio libre.</li>
+            <li>Congelamiento de salarios y despido de miles de empleados públicos para reducir el gasto estatal.</li>
+            <li>Cierre y relocalización masiva de mineros tras el colapso de COMIBOL, afectando a más de 23.000 trabajadores.</li>
+            <li>Apertura comercial con reducción de aranceles y eliminación de barreras a las importaciones.</li>
+            <li>Privatización parcial y reducción del tamaño del Estado, promoviendo la inversión privada nacional y extranjera.</li>
+            <li>Control del déficit fiscal mediante la disminución del gasto público y la eliminación de subsidios.</li>
+          </ul>
+          <img src="mineros.jpg" alt="Mineros relocalizados 1985">
+          <video controls>
+            <source src="video1.mp4" type="video/mp4">
+          </video>
+          <h3>Consecuencias</h3>
+          <p>El Decreto 21060 logró estabilizar la economía en el corto plazo: la inflación se redujo drásticamente y el país recuperó cierta confianza financiera internacional. Sin embargo, el costo social fue altísimo. Miles de familias quedaron sin trabajo y se vieron obligadas a migrar a las ciudades del oriente y occidente boliviano en busca de nuevas oportunidades. Surgieron las cooperativas mineras, el comercio informal y los asentamientos periurbanos como nuevas formas de subsistencia.
+El sindicalismo, antes fuerte y organizado, perdió poder, marcando el declive de la clase obrera tradicional. Aunque el país experimentó estabilidad macroeconómica, se profundizaron las desigualdades sociales, aumentó la pobreza y se debilitó el papel del Estado en la provisión de servicios públicos. Este proceso sentó las bases de un modelo económico que dominaría Bolivia por dos décadas y que más tarde generaría un fuerte descontento social, reflejado en las protestas de los años 2000.
+</p>
+        `,
+
+        "1990": `
+          <h2>Década de 1990 – Privatización y Capitalización</h2>
+          <h3>Contexto</h3>
+          <p>Durante los gobiernos de <strong>Jaime Paz Zamora</strong> y <strong>Gonzalo Sánchez de Lozada</strong>, se consolidó la etapa neoliberal más intensa. Se impulsó el proceso de capitalización, una forma de privatización parcial.
+          Durante la década de 1990, Bolivia vivía los efectos del ajuste estructural iniciado en 1985. La inflación había sido controlada, pero el desempleo, la desigualdad y la pobreza continuaban afectando a gran parte de la población. Los gobiernos que siguieron, especialmente el de Gonzalo Sánchez de Lozada (1993-1997), continuaron con la orientación neoliberal bajo la promesa de modernizar el país y atraer inversión extranjera.
+El contexto internacional también influyó: América Latina atravesaba una ola de privatizaciones y reformas del Estado impulsadas por organismos como el Fondo Monetario Internacional (FMI) y el Banco Mundial, en el marco del llamado Consenso de Washington. En ese escenario, Bolivia adoptó una política de capitalización, una forma particular de privatización que transformó profundamente su estructura económica.</p>
+          <h3>Políticas aplicadas</h3>
+          <ul>
+            <li>Venta del 50% de empresas estatales a corporaciones extranjeras.</li>
+            <li>Inversión de capital extranjero en YPFB, ENTEL, ENFE y LAB.</li>
+            <li>Reforma educativa y descentralización: se transfirieron responsabilidades de educación y salud a municipios, con el objetivo de mejorar la gestión pública.</li>
+            <li>Ley de Capitalización (1994): permitió entregar el 50% del valor de las empresas estatales a inversores extranjeros, quienes se comprometían a invertir en el país.</li>
+            <li>Creación de las Administradoras de Fondos de Pensiones (AFP): se reemplazó el sistema solidario de jubilación por uno individual y administrado por empresas privadas.</li>
+            <li>Reducción del papel del Estado en la economía y aumento del rol del sector privado en la provisión de servicios básicos.</li>
+            <li>Promoción de inversión extranjera directa (IED): se redujeron impuestos a grandes empresas para atraer capitales del exterior.</li>
+          </ul>
+          <img src="presentación.jpg" alt="Empresas capitalizadas en los 90s">
+          <video controls>
+            <source src="video2.mp4" type="video/mp4">
+          </video>
+          <h3>Consecuencias sociales</h3>
+          <p>Aunque las políticas de capitalización lograron aumentar temporalmente la inversión extranjera y mejorar algunos indicadores macroeconómicos, también generaron fuertes críticas y rechazo social. Muchos bolivianos sintieron que los recursos naturales fueron entregados a empresas extranjeras sin beneficiar al pueblo. La privatización de servicios como el agua, la electricidad y las telecomunicaciones elevó los costos para las familias y debilitó la soberanía nacional sobre sectores estratégicos.
+Se consolidó una dependencia del capital extranjero, mientras que el Estado perdió capacidad de regulación. A nivel social, se incrementó la desigualdad económica, surgieron nuevos movimientos sindicales y populares, y creció el malestar que años después desembocaría en las grandes protestas de los años 2000, como la Guerra del Agua (2000) y la Guerra del Gas (2003).</p>
+        `,
+
+        "2000": `
+          <h2>2000 – La Guerra del Agua</h2>
+          <h3>Antecedentes</h3>
+          <p>Aunque las políticas de capitalización lograron aumentar temporalmente la inversión extranjera y mejorar algunos indicadores macroeconómicos, también generaron fuertes críticas y rechazo social. Muchos bolivianos sintieron que los recursos naturales fueron entregados a empresas extranjeras sin beneficiar al pueblo. La privatización de servicios como el agua, la electricidad y las telecomunicaciones elevó los costos para las familias y debilitó la soberanía nacional sobre sectores estratégicos.
+Se consolidó una dependencia del capital extranjero, mientras que el Estado perdió capacidad de regulación. A nivel social, se incrementó la desigualdad económica, surgieron nuevos movimientos sindicales y populares, y creció el malestar que años después desembocaría en las grandes protestas de los años 2000, como la Guerra del Agua (2000) y la Guerra del Gas (2003).</p>
+          <h3>El conflicto</h3>
+          <p>Aunque las políticas de capitalización lograron aumentar temporalmente la inversión extranjera y mejorar algunos indicadores macroeconómicos, también generaron fuertes críticas y rechazo social. Muchos bolivianos sintieron que los recursos naturales fueron entregados a empresas extranjeras sin beneficiar al pueblo. La privatización de servicios como el agua, la electricidad y las telecomunicaciones elevó los costos para las familias y debilitó la soberanía nacional sobre sectores estratégicos.
+Se consolidó una dependencia del capital extranjero, mientras que el Estado perdió capacidad de regulación. A nivel social, se incrementó la desigualdad económica, surgieron nuevos movimientos sindicales y populares, y creció el malestar que años después desembocaría en las grandes protestas de los años 2000, como la Guerra del Agua (2000) y la Guerra del Gas (2003).</p>
+          <img src="guerradelgas.jpg" alt="Protestas Guerra del Agua 2000">
+          <video controls>
+            <source src="video3.mp4" type="video/mp4">
+          </video>
+          <h3>Resultado</h3>
+          <p>Tras semanas de presión social constante, el gobierno canceló finalmente el contrato con la empresa privada en abril de 2000, devolviendo el control del sistema de agua a la administración municipal. La Guerra del Agua se consolidó como un símbolo de resistencia contra la privatización de recursos esenciales y mostró que la movilización social podía frenar políticas neoliberales percibidas como injustas. Este evento también sentó un precedente para futuras luchas en Bolivia y América Latina, destacando la importancia de defender el acceso universal a bienes básicos frente a intereses corporativos.</p>
+        `,
+
+        "2003": `
+          <h2>2003 – Guerra del Gas y fin del modelo neoliberal</h2>
+          <h3>Antecedentes</h3>
+          <p>A comienzos de la década de 2000, Bolivia seguía bajo un modelo neoliberal que promovía la apertura económica, la privatización de recursos estratégicos y la reducción del papel del Estado en la economía. La población enfrentaba altos niveles de pobreza y desempleo, mientras que el gas natural, principal recurso energético del país, estaba siendo explorado y exportado por empresas transnacionales. En 2003, el gobierno de Gonzalo Sánchez de Lozada anunció un plan para exportar gas hacia Estados Unidos y México a través de puertos chilenos, lo que generó un amplio rechazo debido a la histórica tensión con Chile y al sentimiento de que los beneficios del gas no se distribuían equitativamente entre los bolivianos.</p>
+          <h3>La insurrección</h3>
+          <p>Entre octubre y noviembre de 2003, estallaron protestas masivas conocidas como la Guerra del Gas, protagonizadas por movimientos sociales, organizaciones indígenas, sindicatos y estudiantes. Las manifestaciones se concentraron principalmente en La Paz, El Alto y otras ciudades, incluyendo bloqueos de carreteras y enfrentamientos con la policía y el ejército. La represión dejó un saldo de decenas de muertos y cientos de heridos, pero la presión social creció de manera imparable, obligando al gobierno a renunciar el 17 de octubre de 2003. La insurrección reflejó un rechazo generalizado a las políticas neoliberales y a la entrega de recursos estratégicos a intereses extranjeros, consolidando la participación política de los movimientos sociales y las organizaciones indígenas en la vida nacional.</p>
+          <img src="neoliberalismo.jpg" alt="Guerra del Gas en El Alto 2003">
+          <h3>Guerra del gas</h3>
+          <video controls>
+            <source src="video5.mp4" type="video/mp4">
+          </video>
+          <h3>Consecuencias históricas</h3>
+          <p>La Guerra del Gas marcó el fin del modelo neoliberal en Bolivia y abrió la puerta a un proceso de cambio político y social profundo. Tras la renuncia de Sánchez de Lozada, se produjo un gobierno de transición encabezado por Carlos Mesa, que impulsó consultas populares sobre el manejo de los recursos naturales. A largo plazo, este conflicto sentó las bases para la nacionalización del gas y otros recursos estratégicos bajo el gobierno de Evo Morales en 2006, fortaleciendo la participación ciudadana y reivindicando los derechos de los pueblos indígenas. Históricamente, la Guerra del Gas se convirtió en un símbolo de resistencia contra políticas económicas percibidas como injustas y de lucha por la soberanía sobre los recursos naturales del país.</p>
+        `
+      };
+
+      document.getElementById("contenido").innerHTML = contenido[anio];
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
